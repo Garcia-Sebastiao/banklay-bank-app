@@ -1,0 +1,60 @@
+.main-section {
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.main-section .main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.main-section .main-content h2 {
+  font-family: rubikSemiBold;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--title-color);
+  max-width: 300px;
+}
+.main-section .main-content p {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+}
+.main-section .main-content .auth-options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main-section .main-content .auth-options a {
+  padding: 18px 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+.main-section .main-content .auth-options a:hover {
+  filter: brightness(0.8);
+  transition: 0.4s ease-in-out;
+}
+.main-section .main-content .auth-options a:nth-child(1) {
+  background-color: var(--primary-color);
+  color: white;
+}
+.main-section .main-content .auth-options a:nth-child(2) {
+  border: 1px #00000030 solid;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  color: #333;
+}
+.main-section .main-content .auth-options span {
+  text-align: center;
+  padding-top: 20px;
+}
+.main-section .main-content span a {
+  color: var(--primary-color);
+}

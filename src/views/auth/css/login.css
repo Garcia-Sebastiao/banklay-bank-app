@@ -1,0 +1,69 @@
+.auth-header {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: flex-start;
+}
+.auth-header img {
+  width: 130px;
+}
+.auth-section {
+  display: flex;
+  padding: 40px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+  width: 100%;
+}
+.auth-section h2 {
+  font-size: 2rem;
+  font-family: rubikSemiBold;
+  color: var(--title-color);
+}
+.auth-section form {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  flex-direction: column;
+}
+.auth-section span {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;padding: 0px 5px;
+}
+.auth-section form input {
+  padding: 18px;
+  width: 100%;
+  border-radius: 5px;
+  background: none;
+  border: 1px #00000080 solid;
+}
+.auth-section form span {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+}
+
+.auth-section form button {
+  padding: 18px 20px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+}
+.auth-section span:last-child {
+  font-size: 0.9rem;
+}
+.auth-section span:last-child a {
+  color: var(--primary-color);
+}
+.auth-section form div {
+  display: flex;
+  width: 100%;
+  gap: 7px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.auth-section form div label {
+  font-family: rubikSemiBold;
+}

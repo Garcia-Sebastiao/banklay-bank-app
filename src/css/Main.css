@@ -1,0 +1,58 @@
+@import url(objects/fonts.css);
+@import url(objects/globals.css);
+@import url(objects/colors.css);
+
+@keyframes alert {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0%);
+  }
+}
+
+.error-message {
+  background-color: rgb(211, 63, 63);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transition: transform 0.2s ease-in-out;
+  transform: translateX(-50%);
+  animation: alert 1s linear forwards;
+}
+.error-message p {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.success-message {
+  background-color: rgb(63, 211, 73);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transition: transform 0.2s ease-in-out;
+  transform: translateX(-50%);
+  animation: alert 1s linear forwards;
+}
+.success-message p {
+  color: white;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,221 @@
+body {
+  position: relative;
+}
+.home-header {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-header a {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 1px #00000040 solid;
+}
+.home-header a img {
+  width: 20px;
+}
+.home-header .user-datas {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.home-header .user-datas .user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.home-header .user-datas .user-image img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+.home-header .user-datas .user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.home-header .user-datas .user-info span {
+  font-family: rubikSemiBold;
+  font-size: 1.2rem;
+  color: var(--title-color);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 25px;
+}
+/*--------------------------*/
+.search-form {
+  width: 100%;
+}
+.search-form div {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #00000006;
+  border: 1px #00000030 solid;
+}
+.search-form div input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+}
+.search-form div img {
+  width: 30px;
+}
+/*--------------------------*/
+main .options-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+main .options-section ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main .options-section ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #666;
+}
+main .options-section ul li a {
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px #cfcfcf solid;
+  border-radius: 10px;
+}
+main .options-section ul li a img {
+  width: 25px;
+}
+
+/*----------------*/
+.buy-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+.buy-section .buy-form {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 120px;
+}
+.buy-section span {
+  font-size: 0.9rem;
+  color: #666;
+}
+.buy-section .buy-form div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  width: 100%;
+}
+.buy-section .buy-form div label {
+  font-family: rubikSemiBold;
+}
+.buy-section .buy-form div input,
+.buy-section .buy-form div select {
+  padding: 18px;
+  width: 100%;
+  border-radius: 5px;
+  background: none;
+  border: 1px #00000080 solid;
+}
+.buy-section .buy-form button {
+  padding: 18px 20px;
+  width: 100%;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: var(--primary-color);
+}
+.buy-section .buy-form a {
+  padding: 18px 20px;
+  width: 100%;
+  border: none;
+  color: #666;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #00000015;
+  font-size: 0.9rem;
+}
+/*-------------------------*/
+footer {
+  width: 100%;
+  background-color: white;
+  padding: 25px;
+  position: fixed;
+  box-shadow: 0px -2px 12px #00000015;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+footer nav ul {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  transition: 0.4s ease-in-out;
+}
+footer nav ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+footer nav ul li span {
+  font-size: 0.9rem;
+  color: #666;
+}
+footer nav ul li a img {
+  width: 25px;
+}
+footer nav ul li:nth-child(2) span {
+  color: var(--primary-color);
+}
+footer nav ul li .app {
+  padding: 20px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: var(--primary-color);
+  top: -4rem;
+  left: -50%;
+  margin-left: -5px;
+  transform: translateX(-50%);
+}
+footer nav ul li span:hover {
+  color: var(--primary-color);
+  transition: 0.4s ease-in-out;
+}
+footer nav ul li a img:hover {
+  fill: var(--primary-color);
+  color: var(--primary-color);
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mobile Bank App</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles/index1.css" />
+  </head>
+  <body>
+    <main class="main-content">
+      <img class="vetor-1" src="./assets/images/vetor-1.svg" alt="" />
+      <div>
+        <img class="logo" src="./assets/images/logo.svg" alt="" />
+      </div>
+      <img class="vetor-2" src="./assets/images/vetor-2.svg" alt="" />
+    </main>
+  </body>
+
+  <script>
+    let counter = 0;
+
+    setInterval(() => {
+      counter++;
+
+      if (counter == 5) {
+        window.location.href = "./views/auth/main.php";
+      }
+    }, 1500);
+  </script>
+</html>
